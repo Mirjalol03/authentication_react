@@ -15,6 +15,7 @@ const store = legacy_createStore(
   rootReducer,
   compose(
     applyMiddleware(thunk)
+    // It helps to use the Redux extension in the browser.
     // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
